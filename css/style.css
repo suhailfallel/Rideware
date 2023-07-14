@@ -435,9 +435,6 @@ body {
 }
 
 @media (max-width: 676px) {
-  .section {
-    height: 80vh;
-  }
   .section .container .row {
     display: block;
   }

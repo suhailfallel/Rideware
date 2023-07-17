@@ -171,20 +171,20 @@ body {
   /* Whatsapp Now Button */
   .get-started-btn {
     color: #000000;
-    border-radius: 25px;
-    padding: 7px 25px 8px 25px;
+    border-radius: 50%;
+    padding: 0px 10px 0px 10px;
     white-space: nowrap;
     transition: 0.3s;
-    font-size: 15px;
+    font-size: 40px;
     display: inline-block;
-    background: #2bfd01;
+    background: #00000000;
     text-decoration: none;
+    color: #2bfd01;
   }
   
   .get-started-btn:hover {
-    background: #fff;
-    color: #2bfd01;
-    font-size: 16px;
+    background: #000000;
+    color: #1efd01;
     text-decoration: none;
   }
 
@@ -203,16 +203,16 @@ body {
   @media (max-width: 767px) {
     .get-started-btn {
       padding: 7px 15px 8px 15px;
-      margin-right: 10px;
-      font-size: 14px;
+      margin-right: 20px;
+      font-size: 35px;
     }
   }
 
   @media (max-width: 425px) {
     .get-started-btn {
       padding: 7px 15px 8px 15px;
-      margin-right: 0px;
-      font-size: 14px;
+      margin-right: 10px;
+      font-size: 30px;
     }
   }
 
@@ -220,7 +220,7 @@ body {
     .get-started-btn {
       padding: 4px 10px 5px 10px;
       margin-right: 5px;
-      font-size: 11px;
+      font-size: 25px;
     }
   }
   
@@ -401,7 +401,7 @@ body {
 
 @media (max-width: 400px) {
  .content {
-  margin-top: 10rem;
+  margin-top: 1rem;
  }
 }
 
@@ -481,8 +481,11 @@ body {
 }
 
 @media (max-width: 767px) {
+  .hero {
+    overflow-y: hidden;
+  }
   #section1 {
-    height: 100%;
+    height: auto;
   }
   #section2 h1, #section3 h1, #section4 h1 {
     font-size: 23px;
@@ -514,6 +517,15 @@ body {
     font-size: 18px;
   }
 }
+
+@media (max-width: 400px) {
+  #section1 {
+    display: block;
+    align-items: flex-start;
+    padding-top: 0%;
+  }
+}
+
 @media (max-width: 375px) {
   #section1 h2 {
     font-size: 16px;
@@ -670,7 +682,14 @@ body {
   width: 550px;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 450px) and (max-width: 767px) {
+  .container img { 
+    width: 450px;
+    height: auto;
+  }
+}
+
+@media (max-width: 450px) {
   .container img {
     height: auto;
   }
@@ -692,6 +711,34 @@ body {
   height: 200px; 
   width: 250px; 
   background: white
+}
+
+@media (max-width: 400px) {
+  .about .img-border .img-box {
+    height: 150px; 
+    width: 200px; 
+  }
+}
+
+@media (max-width: 350px) {
+  .about .img-border .img-box {
+    height: 130px; 
+    width: 170px; 
+  }
+}
+
+@media (max-width: 300px) {
+  .about .img-border .img-box {
+    height: 110px; 
+    width: 140px; 
+  }
+}
+
+@media (max-width: 250px) {
+  .about .img-border .img-box {
+    height: 90px; 
+    width: 110px; 
+  }
 }
 
 /* .about img:hover {
@@ -734,7 +781,7 @@ body {
 
 @media (max-width: 767px) {
   .about {
-    height: 100%;
+    height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
   }

@@ -25,6 +25,24 @@ body {
   padding-left: 5rem;
 }
 
+.mobile-view {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-view {
+    display: none;
+  }
+
+  #main {
+    display: none;
+  }
+
+  .mobile-view {
+    display: block;
+  }
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -373,6 +391,7 @@ body {
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
+  width: auto;
 }
 
 .hero::-webkit-scrollbar {
@@ -382,6 +401,12 @@ body {
 .hero::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
+
+/* @media (max-width: 768px) {
+  #hero {
+    display: none;
+  }
+} */
 
 .background-image {
   position: fixed;
@@ -903,6 +928,7 @@ body {
 @media (max-width: 767px) {
   #team {
     height: 100%;
+    background-image: url('../img/web-bg.png');
   }
 }
 
@@ -1121,7 +1147,7 @@ body {
 #solutions {
   width: 100%;
   height: 115vh;
-  background-image: url('img/bgsoltion.jpg');
+  background-image: url('../img/bgsoltion.jpg');
   background-size: cover;
   position: relative;
 }
@@ -1317,6 +1343,9 @@ swiper-slide {
 @media (max-width: 767px) {
   #testimonial {
     height: auto;
+    background-image: url('../img/bgsoltion.jpg');
+    background-size: cover;
+    position: relative;
   }
 }
 

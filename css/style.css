@@ -167,6 +167,12 @@ body {
     margin-top: 0px;
   }
 
+  @media (min-width: 1440px) {
+    #header .logo img {
+      margin-left: 10rem;
+    }
+  }
+
   @media (max-width: 1440px) {
     #header .logo img {
       margin-left: 25px;
@@ -194,7 +200,7 @@ body {
   }
   /* Whatsapp Now Button */
   .get-started-btn {
-    color: #000000;
+    color: #ffffff;
     border-radius: 25px;
     padding: 5px 15px 5px 15px;
     white-space: nowrap;
@@ -203,13 +209,19 @@ body {
     display: inline-block;
     background: #2bfd01;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
   }
   
   .get-started-btn:hover {
     background: #2bfd01;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
+  }
+
+  @media (min-width: 1440px) {
+    .get-started-btn {
+      margin-right: 10rem;
+    }
   }
 
   @media (max-width: 1440px) {
@@ -272,15 +284,15 @@ body {
   .navbar a,
   .navbar a:focus {
     color: rgb(114, 102, 102);
-    /* border-radius: 25px; */
+    border-radius: 25px;
     padding: 7px 25px 8px 25px;
     white-space: nowrap;
     transition: 0.3s;
     font-size: 15px;
     display: inline-block;
     background: #2bfd0100;
-    /* border: 1px solid #FFFFFF; */
-    /* margin-left: 10px; */
+    border: 1px solid rgb(114, 102, 102);
+    margin-left: 10px;
     text-decoration: none;
   }
   
@@ -295,8 +307,8 @@ body {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    /* background-color: #FFFFFF; */
-    color: #a8a1a1;
+    background-color: #000000;
+    color: #ffffff;
     font-size: 17px;
   }
   
@@ -472,6 +484,10 @@ body {
 }
 
 @media (min-width: 1441px){
+  .content .container h2 {
+    font-size: 50px;
+  }
+
   .content .container h1 {
     font-size: 60px;
   }
@@ -657,7 +673,7 @@ body {
 }
 
 #hero .count-box p {
-    font-size: 35px;
+    font-size: 40px;
     line-height: 1;
     color: #fff;
     font-weight: 700;
@@ -667,7 +683,17 @@ body {
 #hero .count-box h6 {
     color: #fff;
     transition: ease-in-out 0.3s;
-    font-size: 14px;
+    font-size: 18px;
+}
+
+@media (min-width: 1441px) {
+  #hero .count-box {
+    margin-top: 3rem;
+  }
+
+  #hero .count-box p {
+    font-size: 50px;
+  }
 }
 
 [data-aos="jump"] {
@@ -738,11 +764,18 @@ body {
   color: rgb(27, 27, 27);
 }
 
-.about2 .content .btn:hover {
+.about2 .content .btn {
   background:  #21a0da;
   border-color: #02c4ff;
-  color: #000000;
+  color: #ffffff;
 }
+
+.about .content .btn {
+  background:  #21a0da;
+  border-color: #02c4ff;
+  color: #ffffff;
+}
+
 
  .about {
   width: 100%;
